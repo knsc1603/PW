@@ -1,0 +1,50 @@
+<!--EJERCICIO 9 Y 10, ya que para el 10 hay que agregarle cosas-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulario de Registro -Mi Web-</title>
+    </head>
+    <body>
+        <h1><strong>Formulario de Registro</strong></h1>
+        <form action="" name="miFormulario" id="miFormulario" method="get">
+            <p>
+                <label>Nombre: <input type="text" id="Nombretxt" name="Nombre" maxlength="50"></label>
+            </p>
+            <p>
+                <label>Apellidos: <input type="text" id="Nombretxt" name="Nombre" maxlength="50"></label>
+            </p>
+            <p>
+                Sexo:
+                <input id="hombre" type="radio" name="Hombre"><label for="hombre"> Hombre</label>
+                <input id="mujer" type="radio" name="Mujer"><label for="mujer"> Mujer</label>
+            </p>
+            <p>
+                <label>Correo: <input type="text" id="Correotxt" name="Correo"></label>
+            </p>
+            <p>
+                Poblacion: <input type="search" name="Poblaciones" list="listaLugares">
+                <datalist id="listaLugares">
+                    <option value="Alicante">
+                    <option value="Madrid">
+                    <option value="Sevilla">
+                    <option value="Valencia">
+                </datalist>
+            </p>
+            <p>
+                Descripcion:
+                <textarea name="textarea" maxlength="100" placeholder="Escribe..."></textarea>
+            </p>
+            <p>
+                <input id="check" type="checkbox" checked><label for="check">Deseo recibir informacion sobre novedades y ofertas.</label>
+            </p>
+            <p>
+                <input id="check1" type="checkbox"><label for="check1">Declaro haber leido y acepto las condiciones generales
+                    del programa y la normativa sobre la proteccion de datos.</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </body>
+</html>
