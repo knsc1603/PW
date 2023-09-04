@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulario de prueba de HTML5</title>
+    </head>
+    <body>
+        <h1><strong>Formulario de Prueba</strong></h1>
+        <form id="formulario" action="" method="get">
+            <p>
+                <label>Nombre: <input type="text" id="Nombretxt" name="Nombre" autofocus required></label>
+            </p>
+            <p>
+                <label>Correo: <input type="email" id="Correotxt" name="Correo" required></label>
+            </p>
+            <p>
+                <label>URL: <input type="url" id="url" name="laUrl" placeholder="Escribe la URL de tu pagina web personal"></label>
+            </p>
+            <p>
+                <label>Fecha: <input type="date" name="fechaesperada"></label>
+            </p>
+            <p>
+                <label>Tiempo: <input type="time" name="timesperado"></label>
+            </p>
+            <p>
+                <label>Fecha y hora: <input type="datetime-local" name="fechahoraesperada"></label>
+            </p>
+            <p>
+                <label>Mes: <input type="month" name="mesesperado"></label>
+            </p>
+            <p>
+                <label>Semana: <input type="week" name="weekesperada"></label>
+            </p>
+            <p>
+                <label>Numero: (min -10, max 10)<input type="number" name="numeroesperado" min="'10" max="10"></label>
+            </p>
+            <p>
+                <label>Telefono: <input type="tel" name="telesperado"></label>
+            </p>
+            <p>
+                <label>Termino de busqueda: <input type="search" name="search"></label>
+            </p>
+            <p>
+                <label>Color favorito: <input type="color" name="color" id="listacoloresperfil"></label>
+                <datalist id="listacoloresperfil">
+                    <option value="#00ffff">
+                    <option value="#ff00ff">
+                    <option value="#ffff00">
+                    <option value="#ffaa00">
+                </datalist>
+            </p>
+            <p>
+                <input type="submit" value="Enviar mensaje">
+                <input type="reset" value="Comenzar de nuevo">
+            </p>
+        </form>
+    </body>
+</html>
