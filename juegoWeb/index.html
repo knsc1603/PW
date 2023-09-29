@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Math Questions</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+            <h1>Math Quiz</h1>
+        </header>
+        <span class="negrita"> 
+            <p class="intro">-Piense bien y responda las preguntas, algunas tienen 1 respuesta correcta, otras mas de 1! </p>
+            <p class="intro1">-Al finalizar el ultimo nivel, complete el formulario para entrar al Ranking!</p>
+        </span>
+        <section class="nivel1">
+            <h2>Nivel 1</h2>
+            <p>¿Cuánto vale x en el siguiente ejercicio?</p>
+            <img src="C:\Users\karen\Downloads\ej.png" alt="Triangulo rectangulo"><br>
+            <label>
+                <input type="radio" name="opc">30
+            </label><br>
+            <label>
+                <input type="radio" name="opc">56
+            </label><br>
+            <label>
+                <input type="radio" name="opc">28 <!--correcta-->
+            </label><br> 
+            <label>
+                <input type="radio" name="opc">47
+            </label><br>
+        </section>
+        <button class="siguiente">Siguiente</button>
+        <section class="Formulario">
+            <form>
+                <p>
+                    <label>Nombre: 
+                        <input type="text" id="Nombre" name="Nombre" maxlength="50" required>
+                    </label>
+                </p>
+                <p>
+                    <label>Apellido: 
+                        <input type="text" id="Nombre" name="Nombre" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>Edad: 
+                        <input type="text" id="edad" name="edad" maxlength="2" size="5">
+                    </label>
+                </p>
+                <p class="enviar">
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
+        </section>
+        <section class="ranking">
+            <aside class="tabla">
+                <table class="tablaranking">
+                    <caption>Tabla de Ranking</caption>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Puntos Objenidos</th>
+                    </tr>
+                    <tr>
+                        <th>Karen</th>
+                        <th>50</th>
+                    </tr>
+                    <tr>
+                        <th>Julieta</th>
+                        <th>35</th>
+                    </tr>
+                    <tr>
+                        <th>Pablo</th>
+                        <th>15</th>
+                    </tr>
+                </table>
+            </aside>
+        </section>
+        <footer>Creado por Cuadros Karen</footer>
+    </body>
+</html>
