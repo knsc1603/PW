@@ -6,76 +6,62 @@
         <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
-        <header>
-            <h1>Math Quiz</h1>
-        </header>
-        <span class="negrita"> 
-            <p class="intro">-Piense bien y responda las preguntas, algunas tienen 1 respuesta correcta, otras mas de 1! </p>
-            <p class="intro1">-Al finalizar el ultimo nivel, complete el formulario para entrar al Ranking!</p>
-        </span>
-        <section class="nivel1">
-            <h2>Nivel 1</h2>
-            <p>¿Cuánto vale x en el siguiente ejercicio?</p>
-            <img src="C:\Users\karen\Downloads\ej.png" alt="Triangulo rectangulo"><br>
-            <label>
-                <input type="radio" name="opc">30
-            </label><br>
-            <label>
-                <input type="radio" name="opc">56
-            </label><br>
-            <label>
-                <input type="radio" name="opc">28 <!--correcta-->
-            </label><br> 
-            <label>
-                <input type="radio" name="opc">47
-            </label><br>
+        <section class="inicio">
+            <header>
+                <h1>Quiz Matemático</h1>
+            </header>
+            <p class="intro">¡Bienvenido! A continuación deberá responder algunas preguntas sobre Matemáticas, tanto teóricas como prácticas.<br>
+                La complejidad del nivel aumentará a medida que vaya avanzando.<br>
+                Tenga en cuenta lo siguiente: <br></p>
+            <p class="intro0">-Piense y responda bien las preguntas, algunas tienen 1 respuesta correcta, otras más de 1! </p>
+            <p class="intro1">-Cada respuesta correcta vale 10 puntos, al finalizar sabrá su puntaje total</p>
+            <p class="intro2">¡Ingrese su nombre para empezar el juego!</p>
         </section>
-        <button class="siguiente">Siguiente</button>
         <section class="Formulario">
-            <form>
-                <p>
-                    <label>Nombre: 
-                        <input type="text" id="Nombre" name="Nombre" maxlength="50" required>
-                    </label>
-                </p>
-                <p>
-                    <label>Apellido: 
-                        <input type="text" id="Nombre" name="Nombre" maxlength="50">
-                    </label>
-                </p>
-                <p>
-                    <label>Edad: 
-                        <input type="text" id="edad" name="edad" maxlength="2" size="5">
-                    </label>
-                </p>
-                <p class="enviar">
-                    <input type="submit" value="Enviar">
-                </p>
+            <form id="formulario">
+                <label class="name">Nombre: </label>
+                <input type="text" id="nombre" name="Nombre" maxlength="20" placeholder="Nombre" required>
             </form>
+            <button class="boton" onclick="verificarInicio()">Empecemos!</button>
         </section>
+
+        <section class="nivel" id="niveles">
+            <h2 id="level">Nivel: </h2>
+            <p id="consigna" class="pregunta">Pregunta: </p>
+
+            <input type="radio" name="opc" id="opc1" class="opc">
+            <label id="1">Opcion 1</label><br>
+
+            <input type="radio" name="opc" id="opc2" class="opc">
+            <label id="2">Opcion 2</label><br>
+
+            <input type="radio" name="opc" id="opc3" class="opc">
+            <label id="3">Opcion 3</label><br> 
+
+            <input type="radio" name="opc" id="opc4" class="opc">
+            <label id="4">Opcion 4</label><br>
+        </section>
+
+        <button class="siguiente" id="siguiente">Siguiente</button>
+
         <section class="ranking">
             <aside class="tabla">
-                <table class="tablaranking">
+                <table class="tablaranking" id="tabla">
                     <caption>Tabla de Ranking</caption>
                     <tr>
                         <th>Nombre</th>
                         <th>Puntos Objenidos</th>
                     </tr>
                     <tr>
-                        <th>Karen</th>
-                        <th>50</th>
-                    </tr>
-                    <tr>
-                        <th>Julieta</th>
-                        <th>35</th>
-                    </tr>
-                    <tr>
-                        <th>Pablo</th>
-                        <th>15</th>
+                        <td>Karen</th>
+                        <td>50</th>
                     </tr>
                 </table>
             </aside>
         </section>
-        <footer>Creado por Cuadros Karen</footer>
+
+        <footer>Creado por Cuadros Karen, para Web 1</footer>
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="codigo.js"></script>
     </body>
 </html>

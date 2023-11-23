@@ -1,17 +1,17 @@
 /* cuerpo*/
 body{
     background-image: url(images/fondo.jpg);
+    /*background-color: rgb(201, 122, 201);*/
     background-position: center;
     text-align: center;
     background-size: 100%;
 }
 
 h1{
-    /*background-color: blanchedalmond;*/
     margin: 10px;
     font-size: 70px;
     color: black;
-    /*text-align: left;*/
+    margin-top: 2%;
 }
 
 h2{
@@ -25,17 +25,23 @@ p{
     font-size: 20px;
 }
 
-.negrita, caption{
+caption{
     font-weight: bolder;
 }
 
-.intro, .intro1{
-    background-color: rgb(241, 88, 137);
+.intro, .intro0, .intro1, .intro2{
+    background-color: rgb(241, 112, 153);
     text-align: center;
     border-radius: 8px;
 }
 
 .intro{
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 3%;
+}
+
+.intro0{
     margin-left: 23.5%;
     margin-right: 23.5%;
 }
@@ -45,27 +51,48 @@ p{
     margin-right: 28%;
 }
 
-.Formulario, .nivel1 {
+.intro2{
+    margin-left: 37%;
+    margin-right: 37%;
+}
+
+.Formulario, .nivel {
     background-color: rgb(236, 153, 236);
     width: 25%;
     height: 28%;
-    /*margin-left: 37.5%;*/
     border-radius: 10px;
 }
 
 .Formulario{
-    padding: 1px;
+    padding: 1%;
     margin: 10px;
     margin-left: 37.5%;
+    margin-top: 8%; 
 }
 
-.nivel1{
-    margin-top: 1.5%;
-    margin-left: 37.5%;
+.name{
+    font-size: 23px;
+}
+
+.nivel{
+    margin-top: 8%;
+    margin-left: 33%;
+    margin-right: 30%;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 28px;
+}
+
+.pregunta{
+    font-size: 20px;
+    overflow: auto;
+    text-align: center;
 }
 
 .tablaranking{
-    margin-left: 43.5%;
+    margin-left: 45.3%;
     border: 1px solid #000000;
 }
 
@@ -78,6 +105,23 @@ th, td, table, caption{
 
 .tabla{
     padding: 10px;
+}
+
+.boton{
+    margin-top: 30%;
+    text-align: center;
+    margin-right: 35%;
+}
+
+.siguiente{
+    margin-top: 9%;
+    margin-right: 3%;
+}
+
+.volverInicio{
+    margin-left: 33%;
+    margin-right: 30%;
+    font-size: 20px;
 }
 
 #Nombre, #edad{
@@ -100,7 +144,7 @@ button:hover{
 footer{
     color: black;
     text-align: left;
-    /*bottom: 0;*/
+    bottom: 0;
     position: absolute;
     font-size: 18px;
 }
