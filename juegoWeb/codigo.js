@@ -10,11 +10,10 @@ const opc1 = document.getElementById('1');
 const opc2 = document.getElementById('2');
 const opc3 = document.getElementById('3');
 const opc4 = document.getElementById('4');
-const siguiente = document.getElementById('siguiente')
+const botonSiguiente = document.getElementById('siguiente')
 const opciones = document.querySelectorAll('.opc')
-const imagen = document.getElementById('.image')
 
-let quiz = 0;
+let lista = 0;
 let puntos = 0;
 let correcta = 0;
 
@@ -94,7 +93,7 @@ function empezar(){
     opcionesDesenmarcadas()
     $(".nivel").show()
     $(".siguiente").show()
-    datos = preguntas[quiz];
+    datos = preguntas[lista];
     level.innerText = datos.nivel
     pregunta.innerText = datos.Nivel
     opc1.innerText = datos.opc1
@@ -121,7 +120,7 @@ function rtaSeleccionada(){
     return rta;
 }
 
-siguiente.addEventListener('click', accion)
+botonSiguiente.addEventListener('click', accion)
 
 function accion(){
     
@@ -137,9 +136,9 @@ function accion(){
         }
     }
 
-    quiz++;
+    lista++;
 
-    if(quiz < preguntas.length){
+    if(lista < preguntas.length){
         empezar();
     }
     else{
